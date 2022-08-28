@@ -19,9 +19,9 @@ function Category(props) {
             </h1>
             <header className="bg-[#F4F4F4] text-black mt-10">
                 <nav aria-label="Top">
-                    <div className="w-full flex items-center justify-between border-b border-indigo-500 lg:border-none">
+                    <div className="w-full flex items-center justify-between border-none">
                         <div className="flex items-center">
-                            <button className='font-semibold px-4 py-2 w-64 text-left flex items-center justify-between focus:bg-gray-200'>All Products <BsChevronDown /></button>
+                            <button className='font-semibold px-4 py-3 w-64 text-left flex items-center justify-between focus:bg-gray-200'>All Products <BsChevronDown /></button>
                             <div className="hidden ml-10 space-x-8 lg:block">
                                 {navigation.map((link) => (
                                     <a key={link.name} href={link.href} className="text-base font-medium text-black">
