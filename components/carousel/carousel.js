@@ -16,7 +16,7 @@ export default function Carousel() {
                     disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}
-                className="bg-gray-900 w-full h-96 w-5/6 mt-10 rounded-md">
+                className="bg-gray-900 w-full h-96 w-5/6 mt-14 rounded-md">
                 <SwiperSlide>
                     <div className="flex items-center h-96 justify-around">
                         <div className="">

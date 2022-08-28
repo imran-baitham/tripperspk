@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Carousel from "../components/carousel/carousel";
+import Category from "../components/category/category";
 import Header from "../components/header/header";
 import Dreams from "../components/home";
 import styles from "../styles/Home.module.css";
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Header />
         <Dreams />
+        <Category />
         <Carousel />
       </main>
 
