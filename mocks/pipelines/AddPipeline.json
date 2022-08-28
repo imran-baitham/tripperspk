@@ -1,0 +1,13 @@
+{
+  "id": "pipeline-1234567890-1",
+  "type": "",
+  "projectId": 1234567890,
+  "pipelineIdNumber": "1",
+  "name": "",
+  "triggers": null,
+  "stages": null,
+  "status": "",
+  "startTime": 0,
+  "endTime": 0,
+  "logUri": ""
+}
