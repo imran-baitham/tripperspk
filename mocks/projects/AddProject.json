@@ -22,7 +22,7 @@
     "time": "2 hours",
     "star": false,
     "login": true,
-    "productApiUrl": "https://raw.githubusercontent.com/imran-baitham/ImagesFolder/master/imagethree.jpg"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/pixels.jpeg?raw=true"
   },
   {
     "id": 2,
@@ -47,7 +47,7 @@
     "time": "1 day",
     "star": false,
     "login": true,
-    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/nature.jpg?raw=true"
   },
   {
     "id": 3,
@@ -72,7 +72,7 @@
     "time": "1 month",
     "star": false,
     "login": true,
-    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/pixels.jpeg?raw=true"
   },
   {
     "id": 4,
@@ -97,10 +97,10 @@
     "time": "2 mints",
     "star": false,
     "login": true,
-    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/nature.jpg?raw=true"
   },
   {
-    "id": 1,
+    "id": 5,
     "name": "Pure petrol Sport car",
     "slug": "Pure-petrol-Sport-car",
     "datails": "Best plot for rent  available for as a location for rent  available for as a location ",
@@ -122,10 +122,10 @@
     "time": "2 hours",
     "star": false,
     "login": true,
-    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/pixels.jpeg?raw=true"
   },
   {
-    "id": 2,
+    "id": 6,
     "name": "Yamha bike",
     "slug": "Yamha-bike",
     "datails": "Best plot for rent  available for as a location for rent  available for as a location ",
@@ -147,10 +147,10 @@
     "time": "1 day",
     "star": false,
     "login": true,
-    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/nature.jpg?raw=true"
   },
   {
-    "id": 3,
+    "id": 7,
     "name": "Sareena Hotel",
     "slug": "Sareena-Hotel",
     "datails": "Best plot for rent  available for as a location for rent  available for as a location ",
@@ -172,10 +172,10 @@
     "time": "1 month",
     "star": false,
     "login": true,
-    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/pixels.jpeg?raw=true"
   },
   {
-    "id": 4,
+    "id": 8,
     "name": "Jutial gilgit",
     "slug": "Jutial-gilgit",
     "datails": "Best plot for rent  available for as a location for rent  available for as a location ",
@@ -197,6 +197,6 @@
     "time": "2 mints",
     "star": false,
     "login": true,
-    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/nature.jpg?raw=true"
   }
 ]

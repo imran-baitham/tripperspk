@@ -48,7 +48,7 @@ export default function Product() {
             <Link href={`/product/${person.slug}`} passHref>
               <div className="flex-1 flex flex-col bg-red-300 cursor-pointer">
                 <img
-                  className="flex-shrink-0 mx-auto h-64 w-96"
+                  className="flex-shrink-0 mx-auto h-64 w-96 bg-gray-200"
                   src={person.productApiUrl}
                   alt="image not get from api"
                 />
