@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import testimage from "../../public/images/nature.jpg";
-import starsImg from "../../public/images/imageStar.png"
+import starsImg from "../../public/images/imageStar.png";
 import ProductSkeleton from "./productSkeleton/Skeleton";
 
 export default function Product() {
@@ -23,7 +23,6 @@ export default function Product() {
           role="list"
           className="my-24 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
         >
-
           {skeletonMap.map(() => {
             // eslint-disable-next-line react/jsx-key
             return <ProductSkeleton />;
@@ -58,19 +57,25 @@ export default function Product() {
               </div>
             </Link>
             <div className="text-left p-6">
-              <h3 className="text-2xl font-[300] font-semibold">{person.name}</h3>
+              <h3 className="text-2xl font-[300] font-semibold">
+                {person.name}
+              </h3>
               <p className="pt-1 font-poppins">{person.datails}</p>
               <div className="pt-2 flex items-center justify-between font-semibold">
                 <h2>{person.charge}</h2>
                 <h2>{person.price}</h2>
               </div>
               <div className="pt-2 flex items-center justify-between  ">
-                <h2 >{person.address}</h2>
+                <h2>{person.address}</h2>
                 <h2>{person.time}</h2>
               </div>
               <div className="pt-2 flex items-center justify-between">
                 <div className="flex items-center aligin-center">
-                  <img className="w-[105px]" src={starsImg.src} alt="image not get from api" />
+                  <img
+                    className="w-[105px]"
+                    src={starsImg.src}
+                    alt="image not get from api"
+                  />
                   <h2 className="ml-2">{person.rate}</h2>
                 </div>
                 <button className="bg-[#0047FF] text-white py-1 px-4 rounded-md">

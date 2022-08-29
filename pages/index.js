@@ -23,7 +23,7 @@ export default function Home() {
         <Product />
       </main>
 
-      <footer >
+      <footer>
         <Footer />
       </footer>
     </div>

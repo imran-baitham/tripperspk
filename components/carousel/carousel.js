@@ -8,7 +8,6 @@ import "swiper/css";
 import { Autoplay } from "swiper";
 
 export default function Carousel() {
-
   return (
     <>
       <Swiper
