@@ -4,9 +4,7 @@ function From() {
   return (
     <div className="w-full flex flex-col justify-center items-center">
       <div className="mb-6 w-[50%]">
-        <label
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-        >
+        <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
           Large input
         </label>
         <input
@@ -16,9 +14,7 @@ function From() {
         />
       </div>
       <div className="mb-6 w-[50%]">
-        <label
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-        >
+        <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
           Large input
         </label>
         <input
@@ -28,10 +24,7 @@ function From() {
         />
       </div>
       <div className="mb-6 w-[50%]">
-        <label
-
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-        >
+        <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
           Large input
         </label>
         <input
@@ -42,8 +35,7 @@ function From() {
       </div>
 
       <div className="mb-6 w-[50%]">
-        <label
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"        >
+        <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
           Upload file
         </label>
         <input
@@ -59,7 +51,7 @@ function From() {
           SVG, PNG, JPG or GIF (MAX. 800x400px).
         </p>
       </div>
-    </div >
+    </div>
   );
 }
 

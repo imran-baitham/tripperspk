@@ -6,12 +6,10 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      sans: ["Graphik", "sans-serif"],
+      serif: ["Merriweather", "serif"],
     },
-    extend: {
-    }
+    extend: {},
   },
   plugins: [],
-
-}
+};

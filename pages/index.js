@@ -4,6 +4,7 @@ import Category from "../components/category/category";
 import Header from "../components/header/header";
 import Dreams from "../components/home";
 import styles from "../styles/Home.module.css";
+import Product from "./product/product";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Dreams />
         <Category />
         <Carousel />
+        <Product />
       </main>
 
       <footer className={styles.footer}>
