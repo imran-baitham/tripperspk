@@ -11,6 +11,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper";
 import Category from "../../components/category/category";
+import Link from "next/link";
+import ChatBox from "../chatBox";
 
 
 function ProductScreen() {
@@ -75,7 +77,10 @@ function ProductScreen() {
                 </div>
               </div>
               <div className="my-5 text-center">
+                
+                <Link href="/chatBox">
                 <button className="bg-[#0047FF] absolute bottom-2 left-2 text-white border-1 py-3 px-32 mt-10">Chat with saller</button>
+                </Link>
               </div>
             </div>
           </aside>
