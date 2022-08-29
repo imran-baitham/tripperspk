@@ -3,6 +3,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import testimage from "../../public/images/nature.jpg";
 import starsImg from "../../public/images/imageStar.png"
+import ProductSkeleton from "./productSkeleton/Skeleton";
+
 export default function Product() {
   const [people, setData] = useState(null);
   const getData = () => fetch("/api/project").then((res) => res.json());
@@ -10,17 +12,34 @@ export default function Product() {
   useEffect(() => {
     setTimeout(() => {
       getData().then((people) => setData(people));
-    }, 1000);
+    }, 5000);
   }, []);
 
-  if (!people) return <div className="text-black text-3xl">loading...</div>;
+  const skeletonMap = [0, 1, 2, 3, 4, 5, 6, 7];
+  if (!people)
+    return (
+      <div className="w-full h-auto w-5/6 m-auto rounded-md">
+        <ul
+          role="list"
+          className="my-24 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        >
+
+          {skeletonMap.map(() => {
+            // eslint-disable-next-line react/jsx-key
+            return <ProductSkeleton />;
+          })}
+        </ul>
+      </div>
+    );
 
   return (
     <div className="w-full h-auto w-5/6 m-auto rounded-md">
-      <h1 className="flex mt-7 ml-10 font-bold items-center">Rents Nearby</h1>
+      <h1 className="font-black text-black text-4xl leading-[55px] text-left pt-14 pb-9">
+        Rents Nearby
+      </h1>
       <ul
         role="list"
-        className="p-10 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
         {people.map((person) => (
           <li
@@ -50,10 +69,10 @@ export default function Product() {
                 <h2>{person.time}</h2>
               </div>
               <div className="pt-2 flex items-center justify-between">
-               <div className="flex items-center aligin-center">
-                <img className="w-[105px]" src={starsImg.src} alt="image not get from api"/>
-               <h2 className="ml-2">{person.rate}</h2>
-               </div>
+                <div className="flex items-center aligin-center">
+                  <img className="w-[105px]" src={starsImg.src} alt="image not get from api" />
+                  <h2 className="ml-2">{person.rate}</h2>
+                </div>
                 <button className="bg-[#0047FF] text-white py-1 px-4 rounded-md">
                   {person.status === "available" ? "available" : "order it"}
                 </button>
