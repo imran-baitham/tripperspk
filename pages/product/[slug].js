@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import Image from "next/image";
-import testimage from "../../public/images/nature.jpg";
+import Datails from "./datailsSkeleton/datails";
 
 function ProductScreen() {
   const [people, setData] = useState([]);
@@ -12,29 +11,26 @@ function ProductScreen() {
       getData().then((people) => setData(people));
     }, 1000);
   }, []);
-  if (!people) {
-    return <h1>Loading data ...</h1>;
-  }
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   const { slug } = router.query;
   const person = people.find((X) => X.slug === slug);
   if (!person) {
-    return <div>Loading ...</div>;
+    return <Datails />;
   }
   return (
     <div className="w-full h-auto w-5/6 m-auto rounded-md">
       <dev key={person.id}>
         <div className=" mt-10">
           <div className="aspect-w-3 aspect-h-2">
-            {/* <img className="object-cover shadow-lg rounded-lg" src={person.imageUrl} alt="" /> */}
-            <Image
+            <img className="max-w-screen-xl h-96 object-cover shadow-lg rounded-lg" src={person.productApiUrl} alt="" />
+            {/* <Image
               width={900}
               height={540}
               className="flex-shrink-0 mx-auto"
               src={testimage.src}
               alt="image not get from api"
-            />
+            /> */}
           </div>
           <div className="text-lg leading-6 font-medium space-y-1">
             <h1 className="text-3xl font-bold py-4">{person.name}</h1>
