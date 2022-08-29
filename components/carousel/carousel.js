@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import img from "../../public/images/image4.png"
+import Image from "next/image";
 // Import Swiper styles
 import "swiper/css";
 import { Autoplay } from "swiper";
@@ -26,7 +27,7 @@ export default function Carousel() {
                             </h1>
                         </div>
                         <div className="w-2/4">
-                            <img className="w-full h-96" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsEzg48O6_CqEi_f_xfK5OnUrevyBG3FMXyw&usqp=CAU" alt="image slider" />
+                            <Image className="w-full h-96" src={img} alt="image slider" />
                         </div>
                     </div>
                 </SwiperSlide>
@@ -39,7 +40,7 @@ export default function Carousel() {
                             </h1>
                         </div>
                         <div className="w-2/4">
-                            <img className="w-full h-96" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaRHTO7rNHiYhWB_h_Svfblub9-VR-qZ-iA&usqp=CAU" alt="image slider" />
+                            <Image className="w-full h-96" src={img} alt="image slider" />
                         </div>
                     </div>
                 </SwiperSlide>
