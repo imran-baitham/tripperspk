@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import testimage from "../../public/images/nature.jpg";
+import ProductSkeleton from "./productSkeleton/Skeleton";
 
 export default function Product() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -13,20 +14,25 @@ export default function Product() {
   useEffect(() => {
     setTimeout(() => {
       getData().then((people) => setData(people));
-    }, 1000);
+    }, 5000);
   }, []);
 
-  if (!people) return <div className="text-black text-3xl">loading...</div>;
-  // const skeletonMap = [0, 1, 2, 3, 4, 5, 6];
-  // if (!people)
-  //     return (
-  //         <div className="text-white text-3xl h-screen">
-  //             {skeletonMap.map(() => {
-  //                 // eslint-disable-next-line react/jsx-key
-  //                 return <h1>item parts</h1>;
-  //             })}
-  //         </div>
-  //     );
+  const skeletonMap = [0, 1, 2, 3, 4, 5, 6, 7];
+  if (!people)
+    return (
+      <div className="w-full h-auto w-5/6 m-auto rounded-md">
+        <ul
+          role="list"
+          className="p-10 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        >
+
+          {skeletonMap.map(() => {
+            // eslint-disable-next-line react/jsx-key
+            return <ProductSkeleton />;
+          })}
+        </ul>
+      </div>
+    );
 
   return (
     <div className="w-full h-auto w-5/6 m-auto rounded-md">
