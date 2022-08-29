@@ -1,12 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Category from "../../components/category/category";
 import Header from "../../components/header/header";
 
 function From() {
   return (
-    <div class="mt-10 sm:mt-0">
-      <div class="md:flex md:flex flex-col justify-center aligin-center  md:gap-6">
-        <div class=" md:mt-0 md:col-span-1 p-14">
+    <div className="mt-10 sm:mt-0">
+      <div className="md:flex md:flex flex-col justify-center aligin-center  md:gap-6">
+        <div className=" md:mt-0 md:col-span-1 p-14">
           <Header />
           <Category />
           <h2 className="font-bold text-4xl my-14  text-center">
@@ -35,7 +36,6 @@ function From() {
                   <div className="">
                     <div className="">
                       <label
-                        for="first_name"
                         className="text-sm font-extrabold text-gray-700"
                       >
                         Add title
@@ -51,14 +51,13 @@ function From() {
                         Please edit the field
                       </p>
                     </div>
-                    <div class=" mt-6">
+                    <div className=" mt-6">
                       <h2 className="mb-2">Description</h2>
                       <textarea
                         type="text"
                         name="first_name"
                         id="first_name"
                         placeholder="Write your description"
-                        autocomplete="given-name"
                         className="mt-1 p-4 ring-black outline-none border-black-500  w-full border rounded-md"
                       />
                       <p className="text-sm font-medium text-gray-700">
@@ -67,7 +66,6 @@ function From() {
                     </div>
                     <div className="col-span-6 sm:col-span-3">
                       <label
-                        for="country"
                         className="block text-sm mt-5 mb-2 font-extrabold text-gray-700"
                       >
                         Brand
@@ -76,7 +74,6 @@ function From() {
                         id="country"
                         name="country"
                         placeholder="Category name"
-                        autocomplete="country"
                         className="mt-1 p-4 bg-white outline-none ring-black border-black-500  w-full border rounded-md"
                       >
                         <option>Category name</option>
@@ -97,7 +94,6 @@ function From() {
                 <div>
                   <h2 className="font-extrabold">Select a price</h2>
                   <label
-                    for="first_name"
                     className="text-sm font-medium text-gray-700"
                   >
                     Price
@@ -116,12 +112,11 @@ function From() {
                 <div>
                   <label
                     className="block mb-2 text-sm font-extrabold mt-8 text-gray-900 dark:text-gray-300"
-                    for="default_size"
                   >
                     Upload your photos
                   </label>
                   <input
-                    class="mt-1 p-4 outline-none ring-black border-black-500  w-full border rounded-md cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                    className="mt-1 p-4 outline-none ring-black border-black-500  w-full border rounded-md cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                     id="default_size"
                     type="file"
                   />
@@ -133,8 +128,7 @@ function From() {
                 <div>
                   <h2 className="font-extrabold mb-3">Your AD'S location</h2>
                   <label
-                    for="first_name"
-                    class="text-sm   font-medium text-gray-700"
+                    className="text-sm   font-medium text-gray-700"
                   >
                     Location
                   </label>
@@ -148,7 +142,6 @@ function From() {
                 </div>
                 <div>
                   <label
-                    for="first_name"
                     className="text-sm font-medium  text-gray-700"
                   >
                     Available/booked
@@ -165,8 +158,7 @@ function From() {
                     lets verify your account
                   </h2>
                   <label
-                    for="first_name"
-                    class="text-sm   font-medium text-gray-700"
+                    className="text-sm   font-medium text-gray-700"
                   >
                     Mobile phone number
                   </label>
@@ -182,7 +174,7 @@ function From() {
                   </p>
                 </div>
               </div>
-              <div class="px-4 py-3 sm:px-6 text-center mb-[170px]">
+              <div className="px-4 py-3 sm:px-6 text-center mb-[170px]">
                 <button
                   type="submit"
                   className="py-4 px-12 text-white font-bold bg-[#0047FF] "
