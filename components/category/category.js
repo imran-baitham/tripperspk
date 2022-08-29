@@ -5,20 +5,32 @@ import { BsChevronDown } from "react-icons/bs";
 const navigation = [
   { name: "Cars", href: "#" },
   { name: "Motorcycle", href: "#" },
-  { name: "house", href: "#" },
   { name: "lands and Plots", href: "#" },
   { name: "Apartments", href: "#" },
   { name: "Cameras", href: "#" },
 ];
 
 const navigationList = [
-  { name: "Cars", href: "#" },
   { name: "Motorcycle", href: "#" },
   { name: "house", href: "#" },
   { name: "lands and Plots", href: "#" },
   { name: "Apartments", href: "#" },
   { name: "Cameras", href: "#" },
 ];
+const Vechicle = [
+  { name: "Cars", href: "#" },
+  { name: "Motorcycle", href: "#" },
+  { name: "house", href: "#" },
+  { name: "Cameras", href: "#" },
+];
+const Tour = [
+  { name: "Cars", href: "#" },
+  { name: "Motorcycle", href: "#" },
+  { name: "house", href: "#" },
+  { name: "lands and Plots", href: "#" },
+  { name: "Apartments", href: "#" },
+];
+
 
 
 function Category(props) {
@@ -62,8 +74,10 @@ function Category(props) {
         </nav>
       </header>
       {show &&
-        <div className="font-black text-black text-left absolute left-50 -bottom-30 z-40 bg-red-400 mt-3">
-          <div className="bg-gray-300 p-5 flex justify-between w-96">
+        <div className="font-black text-black text-left absolute left-50 -bottom-30 z-40 bg-[#F4F4F4] mt-2">
+          <div
+            className="m-5 grid grid-cols-1 gap-5 sm:grid-cols-2"
+          >
             <div>
               <h2 className="text-2xl">Accomodations</h2>
               <ul>
@@ -72,7 +86,23 @@ function Category(props) {
                     <a
                       key={link.name}
                       href={link.href}
-                      className="text-base block font-medium text-black"
+                      className="text-base block font-medium text-black leading-[28px]"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="text-2xl">Vechicle</h2>
+              <ul>
+                <li className="">
+                  {Tour.map((link) => (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      className="text-base block font-medium text-black leading-[28px]"
                     >
                       {link.name}
                     </a>
@@ -88,7 +118,23 @@ function Category(props) {
                     <a
                       key={link.name}
                       href={link.href}
-                      className="text-base block font-medium text-black"
+                      className="text-base block font-medium text-black leading-[28px]"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="text-2xl">Tour</h2>
+              <ul>
+                <li className="">
+                  {Vechicle.map((link) => (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      className="text-base block font-medium text-black leading-[28px]"
                     >
                       {link.name}
                     </a>
