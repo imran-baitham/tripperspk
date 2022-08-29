@@ -10,6 +10,7 @@ import { Menu, Transition } from "@headlessui/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import React from "react";
 import Button from "../button/button";
+import Link from "next/link";
 
 const navigation = [
   {
@@ -28,7 +29,7 @@ const navigation = [
 
 function Header() {
   return (
-    <nav className="bg-gray-300 px-10" aria-label="Top">
+    <nav className=" px-10" aria-label="Top">
       <div className="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
         <div className="">
           <a href="#">
@@ -63,7 +64,7 @@ function Header() {
           </div>
         </div>
         <div className="ml-10 space-x-4 flex">
-          <div className="bg-gray-300">
+          <div className="mt-2">
             <BsChatSquare className="h-5 w-5" aria-hidden="true" />
           </div>
 
@@ -78,6 +79,7 @@ function Header() {
                 />
               </Menu.Button>
             </div>
+            
             <Transition
               as={Fragment}
               enter="transition ease-out duration-100"
@@ -128,9 +130,12 @@ function Header() {
                   )}
                 </Menu.Item>
               </Menu.Items>
+              
             </Transition>
           </Menu>
+          <Link href="/form">
           <Button> Rent out</Button>
+          </Link>
         </div>
       </div>
     </nav>

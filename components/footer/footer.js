@@ -7,7 +7,7 @@ import { ImLinkedin } from "react-icons/im";
 
 function Footer() {
   return (
-    <div className="bg-[#000000] text-white h-[313.38px] flex justify-around items-center">
+    <div className="bg-[#000000] text-white h-[313.38px] w-full flex justify-around items-center flex-wrap">
       <div>
         <Image src={img} />
         <p className="ml-5">

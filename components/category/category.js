@@ -14,9 +14,6 @@ const navigation = [
 function Category(props) {
   return (
     <div className="w-full h-auto w-5/6 m-auto text-white">
-      <h1 className="font-black text-black text-5xl leading-[55px] text-center pt-14">
-        Find Rent your own choose
-      </h1>
       <header className="bg-[#F4F4F4] text-black mt-10">
         <nav aria-label="Top">
           <div className="w-full flex items-center justify-between border-none">
