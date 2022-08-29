@@ -22,7 +22,7 @@
     "time": "2 hours",
     "star": false,
     "login": true,
-    "productApiUrl": "../../public/images/nature.jpg"
+    "productApiUrl": "https://raw.githubusercontent.com/imran-baitham/ImagesFolder/master/imagethree.jpg"
   },
   {
     "id": 2,
@@ -47,7 +47,7 @@
     "time": "1 day",
     "star": false,
     "login": true,
-    "productApiUrl": "../../public/images/nature.jpg"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
   },
   {
     "id": 3,
@@ -72,7 +72,7 @@
     "time": "1 month",
     "star": false,
     "login": true,
-    "productApiUrl": "../../public/images/nature.jpg"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
   },
   {
     "id": 4,
@@ -97,7 +97,7 @@
     "time": "2 mints",
     "star": false,
     "login": true,
-    "productApiUrl": "../../public/images/nature.jpg"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
   },
   {
     "id": 1,
@@ -122,7 +122,7 @@
     "time": "2 hours",
     "star": false,
     "login": true,
-    "productApiUrl": "../../public/images/nature.jpg"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
   },
   {
     "id": 2,
@@ -147,7 +147,7 @@
     "time": "1 day",
     "star": false,
     "login": true,
-    "productApiUrl": "../../public/images/nature.jpg"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
   },
   {
     "id": 3,
@@ -172,7 +172,7 @@
     "time": "1 month",
     "star": false,
     "login": true,
-    "productApiUrl": "../../public/images/nature.jpg"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
   },
   {
     "id": 4,
@@ -197,6 +197,6 @@
     "time": "2 mints",
     "star": false,
     "login": true,
-    "productApiUrl": "../../public/images/nature.jpg"
+    "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/imagethree.jpg?raw=true"
   }
 ]

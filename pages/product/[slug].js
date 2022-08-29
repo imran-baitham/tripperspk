@@ -20,7 +20,7 @@ function ProductScreen() {
   const { slug } = router.query;
   const person = people.find((X) => X.slug === slug);
   if (!person) {
-    return <div>person is not found!</div>;
+    return <div>Loading ...</div>;
   }
   return (
     <div className="w-full h-auto w-5/6 m-auto rounded-md">
