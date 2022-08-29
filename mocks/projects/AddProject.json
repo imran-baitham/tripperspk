@@ -22,6 +22,8 @@
     "time": "2 hours",
     "star": false,
     "login": true,
+    "Condition": "New",
+    "member": "Member since july 2022",
     "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/pixels.jpeg?raw=true"
   },
   {
@@ -47,6 +49,8 @@
     "time": "1 day",
     "star": false,
     "login": true,
+    "Condition": "Old",
+    "member": "Member since july 2022",
     "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/nature.jpg?raw=true"
   },
   {
@@ -72,6 +76,8 @@
     "time": "1 month",
     "star": false,
     "login": true,
+    "Condition": "New",
+    "member": "Member since july 2022",
     "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/pixels.jpeg?raw=true"
   },
   {
@@ -97,6 +103,8 @@
     "time": "2 mints",
     "star": false,
     "login": true,
+    "Condition": "Old",
+    "member": "Member since july 2022",
     "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/nature.jpg?raw=true"
   },
   {
@@ -122,6 +130,8 @@
     "time": "2 hours",
     "star": false,
     "login": true,
+    "Condition": "New",
+    "member": "Member since july 2022",
     "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/pixels.jpeg?raw=true"
   },
   {
@@ -147,6 +157,8 @@
     "time": "1 day",
     "star": false,
     "login": true,
+    "Condition": "Old",
+    "member": "Member since july 2022",
     "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/nature.jpg?raw=true"
   },
   {
@@ -172,6 +184,8 @@
     "time": "1 month",
     "star": false,
     "login": true,
+    "Condition": "New",
+    "member": "Member since july 2022",
     "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/pixels.jpeg?raw=true"
   },
   {
@@ -197,6 +211,8 @@
     "time": "2 mints",
     "star": false,
     "login": true,
+    "Condition": "Old",
+    "member": "Member since july 2022",
     "productApiUrl": "https://github.com/imran-baitham/ImagesFolder/blob/master/nature.jpg?raw=true"
   }
 ]

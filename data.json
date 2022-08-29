@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "email": "This is the first comment",
+        "password": "imrasdf"
+    },
+    {
+        "id": 2,
+        "email": "This is the second comment",
+        "password": "12345"
+    },
+    {
+        "id": 3,
+        "email": "This is the third comment",
+        "password": "asf356f"
+    },
+    {
+        "id": 1661786290143,
+        "email": "haider@gmail.com",
+        "password": "12345"
+    }
+]
