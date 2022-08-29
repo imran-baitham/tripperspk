@@ -79,7 +79,7 @@ function Header() {
                 />
               </Menu.Button>
             </div>
-            
+
             <Transition
               as={Fragment}
               enter="transition ease-out duration-100"
@@ -130,11 +130,10 @@ function Header() {
                   )}
                 </Menu.Item>
               </Menu.Items>
-              
             </Transition>
           </Menu>
           <Link href="/form">
-          <Button> Rent out</Button>
+            <Button> Rent out</Button>
           </Link>
         </div>
       </div>
