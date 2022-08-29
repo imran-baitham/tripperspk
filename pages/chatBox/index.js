@@ -11,7 +11,7 @@ function ChatBox() {
         <div className="w-[778.33px] border-[3px] h-[599.44px] bg-[#FBFBFB] ">
           <h2 className="font-bold ">Inbox</h2>
         </div>
-        <hr/>
+        <hr />
         <div className="w-[778.33px] border-[3px] h-[599.44px] bg-[#FBFBFB] ">
           <h2>Inbox</h2>
         </div>
