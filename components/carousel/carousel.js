@@ -3,12 +3,12 @@ import orangeimage from "../../public/images/orangecar.png";
 import blackimage from "../../public/images/blackcar.png";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import { Autoplay } from "swiper";
 
 export default function Carousel() {
+
   return (
     <>
       <Swiper
