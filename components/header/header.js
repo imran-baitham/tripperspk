@@ -31,7 +31,6 @@ const navigation = [
 
 function Header() {
   const handlechange = () => {
-    alert("hii")
   }
   return (
     <nav className=" px-10" aria-label="Top">
