@@ -2,16 +2,11 @@
 import React from "react";
 import Category from "../../components/category/category";
 import Header from "../../components/header/header";
-import LoginFrom from "../login-from";
-import SingUpFrom from "../singUp";
+
 
 function From() {
   return (
     <>
-      <LoginFrom />
-      <SingUpFrom/>
-      <Header />
-      <Category />
       <div className="mt-10 sm:mt-0">
         <div className="md:flex md:flex flex-col  justify-center aligin-center  md:gap-6">
           <div className=" md:mt-0  md:col-span-1 p-14">
