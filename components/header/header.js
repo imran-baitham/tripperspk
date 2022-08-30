@@ -30,6 +30,9 @@ const navigation = [
 ];
 
 function Header() {
+  const handlechange = () => {
+    alert("hii")
+  }
   return (
     <nav className=" px-10" aria-label="Top">
       <div className="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
@@ -67,9 +70,11 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="border border-1 border-gray-100 flex items-center justify-center w-10 h-10 rounded-full">
-          <BsChatSquare className="h-5 w-5 text-gray-300" aria-hidden="true" />
-        </div>
+        <Link href={"/chatbox"}>
+          <div className="border cursor-pointer border-1 border-gray-100 flex items-center justify-center w-10 h-10 rounded-full">
+            <BsChatSquare className="h-5 w-5 text-gray-300" aria-hidden="true" />
+          </div>
+        </Link>
 
         <Menu as="div" className="ml-3 mr-3 relative flex-shrink-0">
           <div>
@@ -135,7 +140,7 @@ function Header() {
           </Transition>
         </Menu>
         <Link href="/form">
-          <Button className="bg-[#0047FF] px-6 py-[9px] rounded text-white"> Rent out</Button>
+          <Button onClick={handlechange} className="bg-[#0047FF] px-6 py-[9px] rounded text-white"> Rent out</Button>
         </Link>
       </div>
     </nav>
