@@ -2,22 +2,24 @@
 import React from "react";
 import Category from "../../components/category/category";
 import Header from "../../components/header/header";
+import LoginFrom from "../login-from";
 
 function From() {
   return (
     <>
+      <LoginFrom />
       <Header />
       <Category />
       <div className="mt-10 sm:mt-0">
-        <div className="md:flex md:flex flex-col justify-center aligin-center  md:gap-6">
-          <div className=" md:mt-0 md:col-span-1 p-14">
+        <div className="md:flex md:flex flex-col  justify-center aligin-center  md:gap-6">
+          <div className=" md:mt-0  md:col-span-1 p-14">
             <h2 className="font-bold text-4xl my-14  text-center">
               POST YOUR AD
             </h2>
             <form
               action="#"
               method="POST"
-              className="w-[83vw] m-auto  justify-center aligin-center"
+              className="w-[83vw] border-[3px] m-auto  justify-center aligin-center"
             >
               <div className="shadow overflow-hidden sm:rounded-md">
                 <div className="px-4 sm:px-0">
