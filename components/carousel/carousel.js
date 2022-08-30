@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import orangeimage from "../../public/images/orangecar.png";
 import blackimage from "../../public/images/blackcar.png";
 // Import Swiper React components

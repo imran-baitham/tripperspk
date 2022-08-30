@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import testimage from "../../public/images/nature.jpg";
 import starsImg from "../../public/images/imageStar.png";
 import ProductSkeleton from "./productSkeleton/Skeleton";
 
@@ -12,7 +11,7 @@ export default function Product() {
   useEffect(() => {
     setTimeout(() => {
       getData().then((people) => setData(people));
-    }, 5000);
+    }, 2000);
   }, []);
 
   const skeletonMap = [0, 1, 2, 3, 4, 5, 6, 7];

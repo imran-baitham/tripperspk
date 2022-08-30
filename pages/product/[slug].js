@@ -7,6 +7,7 @@ import "swiper/css";
 import { Autoplay } from "swiper";
 import Category from "../../components/category/category";
 import Link from "next/link";
+import Skelton from "./datailsSkeleton/datails";
 
 function ProductScreen() {
   const [people, setData] = useState([]);
@@ -15,14 +16,14 @@ function ProductScreen() {
   useEffect(() => {
     setTimeout(() => {
       getData().then((people) => setData(people));
-    }, 1000);
+    }, 2000);
   }, []);
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   const { slug } = router.query;
   const person = people.find((X) => X.slug === slug);
   if (!person) {
-    return <div>loading .....</div>;
+    return <Skelton />;
   }
 
   return (
