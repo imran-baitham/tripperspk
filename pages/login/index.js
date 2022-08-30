@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import img from "../../public/images/logo.png";
+import Link from "next/link";
 function LoginFrom() {
   return (
     <div>
@@ -14,7 +15,7 @@ function LoginFrom() {
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                 Sign in to your account
               </h1>
-              <form className="space-y-4 md:space-y-6" action="#">
+              <div className="space-y-4 md:space-y-6">
                 <div>
                   <label
                     type="email"
@@ -63,12 +64,13 @@ function LoginFrom() {
                     </div>
                   </div>
                 </div>
-                <button
-                  type="submit"
-                  className="w-full font-medium text-white bg-[#0047FF] hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium  text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-                >
-                  Sign in
-                </button>
+                <Link href={"/"}>
+                  <button
+                    className="w-full font-medium text-white bg-[#0047FF] hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium  text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  >
+                    Sign in
+                  </button>
+                </Link>
                 <a
                   href="#"
                   className="text-sm text-right flex justify-end font-medium text-primary-600 hover:underline dark:text-primary-500"
@@ -84,7 +86,7 @@ function LoginFrom() {
                     Sign up
                   </a>
                 </p>
-              </form>
+              </div>
             </div>
           </div>
         </div>

@@ -1,14 +1,16 @@
 import React from "react";
 import img from "../../public/images/logo.png";
 import Image from "next/image";
-function index() {
+import Link from "next/link";
+function SignUp({ setLogin }) {
+  console.log(setLogin, "condation")
   return (
     <div>
       <div className="bg-gray-50 dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
           <div className="w-full bg-white  shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-              <form className="space-y-4 md:space-y-6" action="#">
+              <div className="space-y-4 md:space-y-6">
                 <div className="flex justify-center my-14">
                   <Image src={img} alt="image" />
                 </div>
@@ -25,7 +27,7 @@ function index() {
                 </div>
                 <div>
                   <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                    Phone number
+                    Email & Phone number
                   </label>
                   <input
                     type="number"
@@ -63,12 +65,13 @@ function index() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-start"></div>
                 </div>
-                <button
-                  type="submit"
-                  className="w-full flex items-center justify-center font-medium text-white  bg-[#0047FF] hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium  text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-                >
-                  Sign up
-                </button>
+                <Link href={"/form"}>
+                  <button
+                    className="w-full flex items-center justify-center font-medium text-white  bg-[#0047FF] hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium  text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  >
+                    Sign up
+                  </button>
+                </Link>
                 <p className="text-sm font-light flex justify-center  text-gray-500 dark:text-gray-400">
                   Already have an account?
                   <a
@@ -78,7 +81,7 @@ function index() {
                     Log in
                   </a>
                 </p>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -87,4 +90,4 @@ function index() {
   );
 }
 
-export default index;
+export default SignUp;

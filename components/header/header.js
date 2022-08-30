@@ -30,8 +30,6 @@ const navigation = [
 ];
 
 function Header() {
-  const handlechange = () => {
-  }
   return (
     <nav className=" px-10" aria-label="Top">
       <div className="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
@@ -124,22 +122,24 @@ function Header() {
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <a
+                  <div
                     href="#"
                     className={classNames(
                       active ? "bg-gray-100" : "",
-                      "block px-4 py-2 text-sm text-gray-700"
+                      "block px-4  text-sm text-gray-700"
                     )}
                   >
-                    Log out
-                  </a>
+                    <Link href={"/login"}>
+                      Log out
+                    </Link>
+                  </div>
                 )}
               </Menu.Item>
             </Menu.Items>
           </Transition>
         </Menu>
-        <Link href="/form">
-          <Button onClick={handlechange} className="bg-[#0047FF] px-6 py-[9px] rounded text-white"> Rent out</Button>
+        <Link href="/singup">
+          <Button className="bg-[#0047FF] px-6 py-[9px] rounded text-white"> Rent out</Button>
         </Link>
       </div>
     </nav>
