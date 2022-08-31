@@ -35,8 +35,8 @@ function Header() {
       <div className="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
         <a href="#">
           <span className="font-bold text-2xl">
-            <Link href={"/"}>
-              <Image src={img} height={80} width={130} />
+            <Link href={"/"}> 
+              <Image src={img} height={80} width={130} alt="image" />
             </Link>
           </span>
         </a>
@@ -46,7 +46,7 @@ function Header() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-base font-medium text-black cursor-pointer text-gray-500"
+                className="text-base  font-medium text-white cursor-pointer text-gray-500"
               >
                 {link.name}
               </a>
