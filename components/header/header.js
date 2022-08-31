@@ -55,7 +55,7 @@ function Header() {
           <div className="w-2/4 px-2 lg:px-6">
             <div className="relative text-gray-700 focus-within:text-gray-900">
               <div className="absolute inset-y-0 right-36 pr-2 flex items-center pointer-events-none">
-                <MagnifyingGlassIcon className="h-5 w-5" aria-hidden="true" />
+                <MagnifyingGlassIcon className="h-5 w-5 mr-8" aria-hidden="true" />
               </div>
               <input
                 id="search"
