@@ -7,7 +7,6 @@ import Header from "../components/header/header";
 import Dreams from "../components/home";
 import styles from "../styles/Home.module.css";
 import Product from "./product/product";
-// import SignUp from "./singup";
 
 export default function Home() {
   const [login, setLogin] = useState(true)

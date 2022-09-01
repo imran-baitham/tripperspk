@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import img from "../../public/images/logo.png";
-import Link from "next/link";
 import { useRouter } from "next/router";
 const LoginFrom = () => {
 

@@ -5,6 +5,9 @@ import Header from "../../components/header/header";
 
 
 function From() {
+  const hendleSubmit =(e)=>{
+    e.preventDefalt()
+  }
   return (
     <>
       <Header />
@@ -17,6 +20,7 @@ function From() {
             </h2>
             <form
               action="#"
+              onSubmit={hendleSubmit}
               method="POST"
               className="w-[83vw] border-[3px] m-auto  justify-center aligin-center"
             >
