@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import Datails from "./datailsSkeleton/datails";
-
-// ==========================================
-import orangeimage from "../../public/images/orangecar.png";
-import blackimage from "../../public/images/blackcar.png";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -12,7 +7,7 @@ import "swiper/css";
 import { Autoplay } from "swiper";
 import Category from "../../components/category/category";
 import Link from "next/link";
-import ChatBox from "../chatBox";
+import Skelton from "./datailsSkeleton/datails";
 
 function ProductScreen() {
   const [people, setData] = useState([]);
@@ -21,15 +16,16 @@ function ProductScreen() {
   useEffect(() => {
     setTimeout(() => {
       getData().then((people) => setData(people));
-    }, 1000);
+    }, 2000);
   }, []);
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   const { slug } = router.query;
   const person = people.find((X) => X.slug === slug);
   if (!person) {
-    return <div>loading .....</div>;
+    return <Skelton />;
   }
+
   return (
     <>
       <Category />
@@ -94,7 +90,7 @@ function ProductScreen() {
                 </div>
               </div>
               <div className="my-5 text-center">
-                <Link href="/chatBox">
+                <Link href={"/chatbox"}>
                   <button className="bg-[#0047FF] absolute bottom-2 left-2 text-white border-1 py-3 px-32 mt-10">
                     Chat with saller
                   </button>

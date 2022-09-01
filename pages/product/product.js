@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import testimage from "../../public/images/nature.jpg";
 import starsImg from "../../public/images/imageStar.png";
 import ProductSkeleton from "./productSkeleton/Skeleton";
+import { Badge } from "@mantine/core";
 
 export default function Product() {
   const [people, setData] = useState(null);
@@ -55,9 +56,11 @@ export default function Product() {
               </div>
             </Link>
             <div className="text-left p-6">
-              <h3 className="text-2xl font-[300] font-semibold">
-                {person.name}
-              </h3>
+              <Link href={`/product/${person.slug}`} passHref>
+                <h3 className="text-2xl font-[300] font-semibold hover:underline cursor-pointer">
+                  {person.name}
+                </h3>
+              </Link>
               <p className="pt-1 font-poppins">{person.datails}</p>
               <div className="pt-2 flex items-center justify-between font-semibold">
                 <h2>{person.charge}</h2>
@@ -76,9 +79,12 @@ export default function Product() {
                   />
                   <h2 className="ml-2">{person.rate}</h2>
                 </div>
-                <button className="bg-[#0047FF] text-white py-1 px-4 rounded-md">
+                <Badge size="lg" radius="xs" variant="outline">
+                  {person.status === "available" ? "Available" : "Booked"}
+                </Badge>
+                {/* <button className="bg-[#0047FF] text-white py-1 px-4 rounded-md">
                   {person.status === "available" ? "available" : "order it"}
-                </button>
+                </button> */}
               </div>
             </div>
           </li>
