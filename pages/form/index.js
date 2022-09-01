@@ -5,8 +5,13 @@ import Header from "../../components/header/header";
 
 
 function From() {
+  const hendleSubmit =(e)=>{
+    e.preventDefalt()
+  }
   return (
     <>
+      <Header />
+      <Category />
       <div className="mt-10 sm:mt-0">
         <div className="md:flex md:flex flex-col  justify-center aligin-center  md:gap-6">
           <div className=" md:mt-0  md:col-span-1 p-14">
@@ -15,6 +20,7 @@ function From() {
             </h2>
             <form
               action="#"
+              onSubmit={hendleSubmit}
               method="POST"
               className="w-[83vw] border-[3px] m-auto  justify-center aligin-center"
             >
